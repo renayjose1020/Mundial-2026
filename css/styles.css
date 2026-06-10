@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+  box-sizing: border-box; /*se ajusta al tamaño del contenedor*/
 }
 
 body {
@@ -8,7 +8,24 @@ body {
   color: black;
   background-color: white;
 }
-
+/*inicio header*/
+header {
+  background-color: #000;
+}
+#logos {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+#copa img {
+  width: 100px;
+}
+#fifa img {
+  width: 191px;
+}
+/*fin header*/
+/*inicio nav*/
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -18,6 +35,7 @@ nav {
   gap: 0.5rem;
   border-bottom: solid 1px #aaa;
   background-color: #eee;
+  text-transform: uppercase;
 }
 
 nav a {
@@ -35,10 +53,84 @@ nav a[aria-current='page'] {
   color: #000;
   background-color: #d4d4d4;
 }
-.activo{
-  box-shadow: 5px lightgray;
+.activo {
+  box-shadow: 5px 5px lightgray;
+  /*border-bottom: 5px solid lightgray; otra opción*/
 }
-
+/*fin nav*/
+/*inicio main*/
+section{
+  width: 1000px;
+  background-color: rgb(130, 210, 210);
+  margin: 0 auto;
+  margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+section div{
+width: 300px;
+height: 170px;
+background-color: yellow;
+margin: 5px;
+}
+#intro{
+  background-image: url(https://static8.depositphotos.com/1000401/917/i/450/depositphotos_9170486-stock-photo-stars-in-outer-space.jpg);
+  box-shadow: 5px 3px lightgrey;
+  border-radius: 15px;
+}
+#eeuu{
+  background-image: url(../img/banderaeeuu.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#mx{
+  background-image: url(../img/banderamx.png);
+  background-size: cover;
+  background-position:center ;
+}
+#can{
+  background-image: url(../img/banderacan.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*fin main*/
+/*inicio del footer*/
+footer {
+  background-color: #000;
+  color: #d4d4d4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#colegio {
+  width: 33%;
+  background-color: red;
+  padding: 5px;
+}
+#colegio a {
+  color: #aaa;
+}
+#alumno {
+  width: 33%;
+  background-color: yellow;
+  color: #aaa;
+  padding: 5px;
+}
+#alumno a {
+  color: #aaa;
+}
+#sociales {
+  width: 33%;
+  background-color: lightblue;
+  padding: 5px;
+}
+#sociales img {
+  width: 50px;
+}
+/*fin del footer*/
 
 main {
   padding: 1rem;
@@ -47,4 +139,33 @@ main {
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
+}
+.multimedia{
+  width: 800px;
+  background-color: blanchedalmond;
+}
+.multimedia video{
+  width: 600px;
+}
+/*estadios*/
+#estadosunidos,#estadosunidos tr, #estadosunidos td, #estadosunidos th{
+  border: solid rgb(237, 100, 189) 3px;
+  border-collapse: collapse;
+}
+#estadosunidos img{
+  width: 200px;
+}
+#canada, #canada tr, #canada td, #canada th{
+  border: solid rgb(237, 100, 223) 3px;
+  border-collapse: collapse;
+}
+#canada img{
+  width: 200px;
+}
+#mexico, #mexico tr, #mexico td, #mexico th{
+  border: solid rgb(237, 100, 216) 3px;
+  border-collapse: collapse;
+}
+#mexico img{
+  width: 200px;
 }
