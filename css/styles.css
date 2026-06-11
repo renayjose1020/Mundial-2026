@@ -169,3 +169,10 @@ h1 {
 #mexico img{
   width: 200px;
 }
+#campeones,#campeones tr, #campeones td, #campeones th{
+  border: solid cornflowerblue 3px;
+  border-collapse: collapse;
+}
+#campeones img{
+  width: 200px;
+}
