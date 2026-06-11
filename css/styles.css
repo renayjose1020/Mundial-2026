@@ -170,7 +170,7 @@ h1 {
   width: 200px;
 }
 #campeones,#campeones tr, #campeones td, #campeones th{
-  border: solid cornflowerblue 3px;
+  border: solid rgb(237, 100, 214) 3px;
   border-collapse: collapse;
 }
 #campeones img{
