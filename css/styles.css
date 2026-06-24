@@ -186,7 +186,7 @@ display: grid;
 grid-template-columns: 1fr 3fr; /* dividido en dos columnas para las fotos*/
 }
 /* El titulo del país ocupan las dos columnas*/
-.país {
+.pais {
   grid-column: span 2;
   padding: 10px;
   font-weight: bold;
